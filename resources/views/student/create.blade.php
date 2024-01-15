@@ -31,7 +31,7 @@
 
                             <div class="mb-3 mt-3">
                                 <label  class="form-label"> Email <small class="danger">*</small></label>
-                                <input type="text" name="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}">
+                                <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}">
 
                                 @error('email')
                                 <div class="text-danger">* {{ $message }}</div>
